@@ -1,0 +1,1 @@
+Aqui é onde ficará os códigos centrais do projeto separado por tipo, aquilo que for relacionado a carro deve ser feito na pasta carro, aquilo da corrida na pasta da corrida e assim por diante.
