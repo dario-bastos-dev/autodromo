@@ -1,0 +1,20 @@
+Uno com escada - Fiat - 999
+Monza - Chevrollet - 857
+Saveiro - VW - 620
+Palieiro - Fiat - 500
+Fusca Azul - VW - 500
+Celta Preto - Chevrollet - 700
+Gol Bolinha - VW - 600
+Gol Quadrado - VW - 590
+BYDiesel - BYD - 500
+Hillux - Toyota - 750
+Supra - Toyota - 1000
+Skyline - Nissa - 1000
+Fiat 147 - Fiat - 499
+Impala 67 - Chevrollet - 666
+Opala 6 caneco - Chevrollet - 699
+Chevetão - Chevrollet - 865
+Vectra - Chevrollet - 725
+inJetta - VW - 934
+Audi TTeta - Audi - 975
+F250 - Ford - 794
