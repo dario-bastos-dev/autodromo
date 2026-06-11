@@ -1,6 +1,6 @@
-Mônaco - 3,337 km - 0.08
-Spa-Francorchamps - 7,004 km - 0.06
-Monza - 5,793 km - 0.05
-Silverstone - 5,891 km - 0.04
-Interlagos - 4,309 km - 0.06
-Suzuka - 5,807 km - 0.05
+Mônaco - 3.337 - 0.08
+Spa-Francorchamps - 7.004 - 0.06
+Monza - 5,793 - 0.05
+Silverstone - 5.891 - 0.04
+Interlagos - 4.309 - 0.06
+Suzuka - 5.807 - 0.05
