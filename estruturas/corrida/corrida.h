@@ -3,6 +3,7 @@
 #include <time.h>
 
 #ifndef CORRIDA
+#define CORRIDA
 
 typedef struct  Resultado {
     Piloto *piloto;

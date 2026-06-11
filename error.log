@@ -1,0 +1,130 @@
+gcc -Wall -Wextra -g3 -std=c99 ./main.c ./estruturas/piloto/piloto.c ./estruturas/carro/carro.c ./estruturas/pista/pista.c ./estruturas/corrida/corrida.c -o build/output.exe -lm
+In file included from ./estruturas/piloto/piloto.h:1,
+                 from ./main.c:4:
+./estruturas/piloto/../carro/carro.h:3:16: error: redefinition of ‘struct Carro’
+    3 | typedef struct Carro {
+      |                ^~~~~
+In file included from ./main.c:3:
+./estruturas/carro/carro.h:3:16: note: originally defined here
+    3 | typedef struct Carro {
+      |                ^~~~~
+./estruturas/piloto/../carro/carro.h:8:3: error: conflicting types for ‘Carro’; have ‘struct Carro’
+    8 | } Carro;
+      |   ^~~~~
+./estruturas/carro/carro.h:8:3: note: previous declaration of ‘Carro’ with type ‘Carro’
+    8 | } Carro;
+      |   ^~~~~
+./estruturas/piloto/../carro/carro.h:10:16: error: redefinition of ‘struct PilhaCarro’
+   10 | typedef struct PilhaCarro {
+      |                ^~~~~~~~~~
+./estruturas/carro/carro.h:10:16: note: originally defined here
+   10 | typedef struct PilhaCarro {
+      |                ^~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:12:3: error: conflicting types for ‘PilhaCarro’; have ‘struct PilhaCarro’
+   12 | } PilhaCarro;
+      |   ^~~~~~~~~~
+./estruturas/carro/carro.h:12:3: note: previous declaration of ‘PilhaCarro’ with type ‘PilhaCarro’
+   12 | } PilhaCarro;
+      |   ^~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:14:13: error: conflicting types for ‘IniciarPilhaCarro’; have ‘PilhaCarro *()’
+   14 | PilhaCarro *IniciarPilhaCarro();
+      |             ^~~~~~~~~~~~~~~~~
+./estruturas/carro/carro.h:14:13: note: previous declaration of ‘IniciarPilhaCarro’ with type ‘PilhaCarro *()’
+   14 | PilhaCarro *IniciarPilhaCarro();
+      |             ^~~~~~~~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:15:6: error: conflicting types for ‘PilhaDeCarros’; have ‘void(PilhaCarro **)’
+   15 | void PilhaDeCarros(PilhaCarro **pilhaCarro);
+      |      ^~~~~~~~~~~~~
+./estruturas/carro/carro.h:15:6: note: previous declaration of ‘PilhaDeCarros’ with type ‘void(PilhaCarro **)’
+   15 | void PilhaDeCarros(PilhaCarro **pilhaCarro);
+      |      ^~~~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:16:6: error: conflicting types for ‘ExibirCarro’; have ‘void(Carro *)’
+   16 | void ExibirCarro(Carro *carro);
+      |      ^~~~~~~~~~~
+./estruturas/carro/carro.h:16:6: note: previous declaration of ‘ExibirCarro’ with type ‘void(Carro *)’
+   16 | void ExibirCarro(Carro *carro);
+      |      ^~~~~~~~~~~
+Modelo: F250 | Marca: Ford | Potencia: 794
+Modelo: Audi TTeta | Marca: Audi | Potencia: 975
+Modelo: inJetta | Marca: VW | Potencia: 934
+Modelo: Vectra | Marca: Chevrollet | Potencia: 725
+Modelo: Chevetão | Marca: Chevrollet | Potencia: 865
+Modelo: Opala 6 caneco | Marca: Chevrollet | Potencia: 699
+Modelo: Impala 67 | Marca: Chevrollet | Potencia: 666
+Modelo: Fiat 147 | Marca: Fiat | Potencia: 499
+Modelo: Skyline | Marca: Nissa | Potencia: 1000
+Modelo: Supra | Marca: Toyota | Potencia: 1000
+Modelo: Hillux | Marca: Toyota | Potencia: 750
+Modelo: BYDiesel | Marca: BYD | Potencia: 500
+Modelo: Gol Quadrado | Marca: VW | Potencia: 590
+Modelo: Gol Bolinha | Marca: VW | Potencia: 600
+Modelo: Celta Preto | Marca: Chevrollet | Potencia: 700
+Modelo: Fusca Azul | Marca: VW | Potencia: 500
+Modelo: Palieiro | Marca: Fiat | Potencia: 500
+Modelo: Saveiro | Marca: VW | Potencia: 620
+Modelo: Monza | Marca: Chevrollet | Potencia: 857
+In file included from ./estruturas/piloto/piloto.c:5:
+./estruturas/piloto/../carro/carro.h:3:16: error: redefinition of ‘struct Carro’
+    3 | typedef struct Carro {
+      |                ^~~~~
+In file included from ./estruturas/piloto/piloto.h:1,
+                 from ./estruturas/piloto/piloto.c:4:
+./estruturas/piloto/../carro/carro.h:3:16: note: originally defined here
+    3 | typedef struct Carro {
+      |                ^~~~~
+./estruturas/piloto/../carro/carro.h:8:3: error: conflicting types for ‘Carro’; have ‘struct Carro’
+    8 | } Carro;
+      |   ^~~~~
+./estruturas/piloto/../carro/carro.h:8:3: note: previous declaration of ‘Carro’ with type ‘Carro’
+    8 | } Carro;
+      |   ^~~~~
+./estruturas/piloto/../carro/carro.h:10:16: error: redefinition of ‘struct PilhaCarro’
+   10 | typedef struct PilhaCarro {
+      |                ^~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:10:16: note: originally defined here
+   10 | typedef struct PilhaCarro {
+      |                ^~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:12:3: error: conflicting types for ‘PilhaCarro’; have ‘struct PilhaCarro’
+   12 | } PilhaCarro;
+      |   ^~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:12:3: note: previous declaration of ‘PilhaCarro’ with type ‘PilhaCarro’
+   12 | } PilhaCarro;
+      |   ^~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:14:13: error: conflicting types for ‘IniciarPilhaCarro’; have ‘PilhaCarro *()’
+   14 | PilhaCarro *IniciarPilhaCarro();
+      |             ^~~~~~~~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:14:13: note: previous declaration of ‘IniciarPilhaCarro’ with type ‘PilhaCarro *()’
+   14 | PilhaCarro *IniciarPilhaCarro();
+      |             ^~~~~~~~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:15:6: error: conflicting types for ‘PilhaDeCarros’; have ‘void(PilhaCarro **)’
+   15 | void PilhaDeCarros(PilhaCarro **pilhaCarro);
+      |      ^~~~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:15:6: note: previous declaration of ‘PilhaDeCarros’ with type ‘void(PilhaCarro **)’
+   15 | void PilhaDeCarros(PilhaCarro **pilhaCarro);
+      |      ^~~~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:16:6: error: conflicting types for ‘ExibirCarro’; have ‘void(Carro *)’
+   16 | void ExibirCarro(Carro *carro);
+      |      ^~~~~~~~~~~
+./estruturas/piloto/../carro/carro.h:16:6: note: previous declaration of ‘ExibirCarro’ with type ‘void(Carro *)’
+   16 | void ExibirCarro(Carro *carro);
+      |      ^~~~~~~~~~~
+./estruturas/piloto/piloto.c:56:6: error: conflicting types for ‘AtribuirCarroAoPiloto’; have ‘void(PilhaPiloto **, PilhaCarro **)’
+   56 | void AtribuirCarroAoPiloto(PilhaPiloto **pilhaPiloto, PilhaCarro **pilhaCarro) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+./estruturas/piloto/piloto.h:18:6: note: previous declaration of ‘AtribuirCarroAoPiloto’ with type ‘void(PilhaPiloto **, PilhaCarro **)’
+   18 | void AtribuirCarroAoPiloto(PilhaPiloto **pilhaPiloto, PilhaCarro **pilhaCarro);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+./estruturas/piloto/piloto.c: In function ‘AtribuirCarroAoPiloto’:
+./estruturas/piloto/piloto.c:61:23: error: assignment to ‘Carro *’ from incompatible pointer type ‘Carro *’ [-Wincompatible-pointer-types]
+   61 |         piloto->carro = carro;
+      |                       ^
+./estruturas/piloto/piloto.c: In function ‘ExibirPilotos’:
+./estruturas/piloto/piloto.c:78:27: error: passing argument 1 of ‘ExibirCarro’ from incompatible pointer type [-Wincompatible-pointer-types]
+   78 |         ExibirCarro(piloto->carro);
+      |                     ~~~~~~^~~~~~~
+      |                           |
+      |                           Carro *
+./estruturas/piloto/../carro/carro.h:16:25: note: expected ‘Carro *’ but argument is of type ‘Carro *’
+   16 | void ExibirCarro(Carro *carro);
+      |                  ~~~~~~~^~~~~
+make: *** [Makefile:20: build/output.exe] Error 1

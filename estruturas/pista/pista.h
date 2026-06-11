@@ -1,4 +1,5 @@
 #ifndef PISTA
+#define PISTA
 
 typedef struct Pista {
     char nome[21];

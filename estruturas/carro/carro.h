@@ -1,4 +1,5 @@
 #ifndef CARRO
+#define CARRO
 
 typedef struct Carro {
     char marca[21];
@@ -13,6 +14,6 @@ typedef struct PilhaCarro {
 
 PilhaCarro *IniciarPilhaCarro();
 void PilhaDeCarros(PilhaCarro **pilhaCarro);
-void ExibirCarros(PilhaCarro *pilhaCarros);
+void ExibirCarro(Carro *carro);
 
 #endif

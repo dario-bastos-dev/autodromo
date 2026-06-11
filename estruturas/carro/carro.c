@@ -54,17 +54,7 @@ void PilhaDeCarros(PilhaCarro **pilhaCarro) {
     
 }
 
-void ExibirCarros(PilhaCarro *pilhaCarros) {
-    if (pilhaCarros->topo == NULL) {
-        printf("Pilha de carros vazia!\n");
-    }
-
-    Carro *carro = pilhaCarros->topo;
-
-    do {
-        printf("Modelo: %s | Marca: %s | Potencia: %d\n", carro->modelo, carro->marca, carro->potencia);
-        carro = carro->prox;
-        
-    } while (carro->prox != NULL);
+void ExibirCarro(Carro *carro) {
+    printf("    Modelo: %s | Marca: %s | Potencia: %d\n", carro->modelo, carro->marca, carro->potencia);
     
 }
