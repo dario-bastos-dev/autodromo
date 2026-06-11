@@ -7,8 +7,9 @@ FLAGS = -Wall -Wextra -g3 -std=c99
 # Nome do executável
 TARGET = build/output.exe
 
-# Todos os arquivos .c (adicione/remova conforme necessário)
-SOURCES = $(shell find . -name "*.c")
+# Lista manual e segura dos arquivos .c do seu projeto estruturado
+SOURCES = main.c \
+          estruturas/carro/carro.c
 
 ADITIONAL = -lm
 
@@ -19,10 +20,10 @@ all: $(TARGET)
 $(TARGET): $(SOURCES)
 	$(CC) $(FLAGS) $(SOURCES) -o $(TARGET) $(ADITIONAL)
 
-# Limpar arquivos compilados
+# Limpar arquivos compilados (Compatível com Windows)
 clean:
-	rm -rf $(TARGET)
+	@if exist build\output.exe del /q build\output.exe
 
-# Compilar e executar
+# Compilar e executar (Compatível com Windows)
 run: all
-	.\$(TARGET)
+	@$(TARGET)
