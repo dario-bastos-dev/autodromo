@@ -4,6 +4,7 @@
 #include "estruturas/carro/carro.h"
 #include "estruturas/piloto/piloto.h"
 #include "estruturas/pista/pista.h"
+#include "estruturas/corrida/corrida.h"
 
 int main(void) {
     srand(time(NULL));
@@ -22,7 +23,13 @@ int main(void) {
 
     Pista *pistas = IniciarPistas();
     if (pistas == NULL) {
-        printf("Erro ao organizar pistas");
+        printf("Erro ao organizar pistas\n");
+        return 1;
+    }
+    
+    ListaCorrida *listaCorrida = IniciarListaCorrida();
+    if (listaCorrida == NULL) {
+        printf("Erro ao iniciar as corridas\n");
         return 1;
     }
     

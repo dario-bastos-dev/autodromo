@@ -18,6 +18,7 @@ PilhaPiloto *IniciarPilhaPiloto();
 void PilhaDePilotos(PilhaPiloto **pilhaPiloto);
 void AtribuirCarroAoPiloto(PilhaPiloto **pilhaPiloto, PilhaCarro **pilhaCarro);
 void ExibirPilotos(PilhaPiloto *pilhaPiloto);
+void ExibirPiloto(Piloto *piloto);
 void LimparPilotos(PilhaPiloto **pilhaPiloto);
 
 #endif

@@ -9,5 +9,6 @@ typedef struct Pista {
 
 Pista *IniciarPistas();
 void ExibirPistas(Pista *pistas);
+void ExibirPista(Pista *pista);
 
 #endif

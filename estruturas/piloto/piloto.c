@@ -85,6 +85,14 @@ void ExibirPilotos(PilhaPiloto *pilhaPiloto) {
     
 }
 
+void ExibirPiloto(Piloto *piloto) {
+
+    printf("Nome: %s | Sexo: %s | Carro:\n", piloto->nome, piloto->sexo);
+    ExibirCarro(piloto->carro);
+    printf("\n");
+    
+}
+
 void LimparPilotos(PilhaPiloto **pilhaPiloto) {
     
     do {
