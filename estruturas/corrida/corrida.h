@@ -33,5 +33,6 @@ void SalvarResultado(
     int pontuacao,
     time_t tempo);
 void ExibirResultados(ListaCorrida *listaCorrida);
+void LimparCorrida(ListaCorrida **listaCorrida);
 
 #endif

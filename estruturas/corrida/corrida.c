@@ -81,3 +81,15 @@ void ExibirResultados(ListaCorrida *listaCorrida) {
     } while (corrida != NULL && resultado != NULL);
      
 }
+
+void LimparCorrida(ListaCorrida **listaCorrida) {
+    
+    do {
+        Corrida *corrida = (*listaCorrida)->inicio;
+        Resultado *resultado = corrida->resultado;
+        (*listaCorrida)->inicio = (*listaCorrida)->inicio->prox;
+        free(resultado);
+        free(corrida);
+    } while ((*listaCorrida)->inicio != NULL);
+    
+}

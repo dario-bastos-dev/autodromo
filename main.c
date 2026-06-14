@@ -39,7 +39,10 @@ int main(void) {
     AtribuirCarroAoPiloto(&pilhaPiloto, &pilhaCarro);
     ExibirPilotos(pilhaPiloto);
     ExibirPistas(pistas);
+
     LimparPilotos(&pilhaPiloto);
+    free(pistas);
+    LimparCorrida(&listaCorrida);
 
     return 0;
 }
