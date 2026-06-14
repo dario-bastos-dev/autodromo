@@ -2,10 +2,12 @@
 #define PISTA
 
 typedef struct Pista {
-    char nome[21];
+    char nome[20];
     int tamanho;
     float acidente;
-    Pista *prox;
 } Pista;
+
+Pista *IniciarPistas();
+void ExibirPistas(Pista *pistas);
 
 #endif

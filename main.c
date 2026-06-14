@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 #include "estruturas/carro/carro.h"
 #include "estruturas/piloto/piloto.h"
+#include "estruturas/pista/pista.h"
 
 int main(void) {
+    srand(time(NULL));
+
     PilhaCarro *pilhaCarro = IniciarPilhaCarro();
     if (pilhaCarro == NULL) {
     printf("Erro ao criar pilha de carro\n");
@@ -15,11 +19,19 @@ int main(void) {
     printf("Erro ao criar pilha de piloto\n");
     return 1;
     }
+
+    Pista *pistas = IniciarPistas();
+    if (pistas == NULL) {
+        printf("Erro ao organizar pistas");
+        return 1;
+    }
+    
     
     PilhaDeCarros(&pilhaCarro);
     PilhaDePilotos(&pilhaPiloto);
     AtribuirCarroAoPiloto(&pilhaPiloto, &pilhaCarro);
     ExibirPilotos(pilhaPiloto);
+    ExibirPistas(pistas);
     LimparPilotos(&pilhaPiloto);
 
     return 0;

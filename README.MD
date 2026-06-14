@@ -2,7 +2,9 @@
 
 ## Como executar
 
-Para compilar e executar código, basta rodar `make && build/output.exe` no terminal.
+Para compilar e executar código, basta rodar `make run` no terminal.
+
+**Obs:** Para o Windows, abra o terminal do **wls** ou do **git bash**, se não dará erro ao na etapa de `SOURCES` do `Makefile`.
 
 ## Como trabalhar
 
