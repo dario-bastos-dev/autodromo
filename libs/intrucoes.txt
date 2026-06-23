@@ -1,3 +1,0 @@
-Aqui ficarão as bibliotecas externas, caso nescessite.
-
-Se nescessário, passe no grupo antes de baixar e adicionar ao projeto.

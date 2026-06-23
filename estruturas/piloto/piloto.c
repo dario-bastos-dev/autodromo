@@ -94,14 +94,14 @@ void ExibirPiloto(Piloto *piloto) {
 }
 
 void LimparPilotos(PilhaPiloto **pilhaPiloto) {
+    if (pilhaPiloto == NULL || *pilhaPiloto == NULL) return;
     
-    do {
+    while ((*pilhaPiloto)->topo != NULL) {
         Piloto *piloto = (*pilhaPiloto)->topo;
         (*pilhaPiloto)->topo = piloto->prox;
-        free(piloto->carro);
+        if (piloto->carro) free(piloto->carro);
         free(piloto);
-    } while ((*pilhaPiloto)->topo != NULL);
+    }
 
     free((*pilhaPiloto));
-    
 }

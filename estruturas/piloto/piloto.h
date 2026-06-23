@@ -14,6 +14,14 @@ typedef struct PilhaPiloto {
     Piloto *topo;
 } PilhaPiloto;
 
+typedef struct PilotoStats {
+    Piloto *piloto;
+    int tempo;
+    int pontos_campeonato;
+    int tempo_total_campeonato;
+    int acidentes;
+} PilotoStats;
+
 PilhaPiloto *IniciarPilhaPiloto();
 void PilhaDePilotos(PilhaPiloto **pilhaPiloto);
 void AtribuirCarroAoPiloto(PilhaPiloto **pilhaPiloto, PilhaCarro **pilhaCarro);

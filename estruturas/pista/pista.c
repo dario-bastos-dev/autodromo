@@ -49,10 +49,10 @@ Pista *IniciarPistas() {
 
 void ExibirPistas(Pista *pistas) {
     for (int i = 0; i < 6; i++) {
-        printf("Pista: %s | Tamanho: %d km | Chance de acidente: %.0f%\n", pistas[i].nome, pistas[i].tamanho, pistas[i].acidente * 100);
+        printf("Pista: %s | Tamanho: %d km | Chance de acidente: %.0f%%\n", pistas[i].nome, pistas[i].tamanho, pistas[i].acidente * 100);
     }
 }
 
 void ExibirPista(Pista *pista) {
-    printf("Pista: %s | Tamanho: %d km | Chance de acidente: %.0f%\n", pista->nome, pista->tamanho, pista->acidente * 100);
+    printf("Pista: %s | Tamanho: %d km | Chance de acidente: %.0f%%\n", pista->nome, pista->tamanho, pista->acidente * 100);
 }

@@ -55,11 +55,11 @@ void SalvarResultado(
 }
 
 void ExibirResultado(Resultado *resultado) {
-    do {
-       printf("Piloto: %s | Colocacao: %d | Pontuacao: %d | Tempo: %d", resultado->piloto->nome, resultado->colocacao, resultado->pontuacao, resultado->tempo);
+    if (resultado == NULL) return;
+    while (resultado != NULL) {
+       printf("Piloto: %s | Colocacao: %d | Pontuacao: %d | Tempo: %ld", resultado->piloto->nome, resultado->colocacao, resultado->pontuacao, (long)resultado->tempo);
        resultado = resultado->prox;
-    } while (resultado != NULL);
-    
+    }
 }
 
 void ExibirResultados(ListaCorrida *listaCorrida) {
@@ -73,23 +73,23 @@ void ExibirResultados(ListaCorrida *listaCorrida) {
 
     printf("Resultado das corridas:\n\n");
 
-    do {
+    while (corrida != NULL && resultado != NULL) {
         ExibirPista(corrida->pista);
         ExibirResultado(resultado);
         corrida = corrida->prox;
         resultado = resultado->prox;
-    } while (corrida != NULL && resultado != NULL);
-     
+    }
 }
 
 void LimparCorrida(ListaCorrida **listaCorrida) {
+    if (listaCorrida == NULL || *listaCorrida == NULL) return;
     
-    do {
+    while ((*listaCorrida)->inicio != NULL) {
         Corrida *corrida = (*listaCorrida)->inicio;
         Resultado *resultado = corrida->resultado;
         (*listaCorrida)->inicio = (*listaCorrida)->inicio->prox;
         free(resultado);
         free(corrida);
-    } while ((*listaCorrida)->inicio != NULL);
+    }
     
 }
